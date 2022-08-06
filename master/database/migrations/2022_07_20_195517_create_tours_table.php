@@ -22,16 +22,7 @@ class CreateToursTable extends Migration
             $table->string('image2');
             $table->string('image3');
             $table->string('image4');
-            $table->string('day1name');
-            $table->string('day1desc');
-            $table->string('day2name');
-            $table->string('day2desc');
-            $table->string('day3name');
-            $table->string('day3desc');
-            $table->string('day4name');
-            $table->string('day4desc');
-            $table->string('day5name');
-            $table->string('day5desc');
+           
             $table->timestamps();
         });
     }

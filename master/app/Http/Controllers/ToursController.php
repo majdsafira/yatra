@@ -15,8 +15,9 @@ class ToursController extends Controller
     public function index()
     {
 
-        $tours = Tours::all();
-        return view('home')->with('tours', $tours);
+        $tour = Tours::all();
+        return view('home')->with('tour', $tour);
+
     }
 
     /**
@@ -27,6 +28,7 @@ class ToursController extends Controller
     public function create()
     {
         //
+        return view('admin.tour.addTour');
     }
 
     /**
@@ -38,6 +40,7 @@ class ToursController extends Controller
     public function store(Request $request)
     {
         //
+
     }
 
     /**

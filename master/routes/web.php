@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminTemplateController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ToursController;
 
 
@@ -15,9 +17,10 @@ use App\Http\Controllers\ToursController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('home');
-// });
+
+//home
+Route::resource('/', ToursController::class);
+
 
 Route::get('/tourdetails', function () {
     return view('tourdetails');
@@ -44,4 +47,16 @@ Route::get('/tourgrid', function () {
     return view('tourgrid');
 });
 
-Route::resource('/', ToursController::class);
+
+
+
+// admin route
+
+
+Route::resource('admin', AdminController::class);
+Route::get('adminLogin', 'App\Http\Controllers\AdminController@login');
+Route::get('/loginad', 'App\Http\Controllers\AdminController@authLogin')->name('login-auth');
+Route::get('/loginout', 'App\Http\Controllers\AdminController@logout')->name('logout');
+Route::get('dash', 'App\Http\Controllers\AdminController@viewDash');
+
+

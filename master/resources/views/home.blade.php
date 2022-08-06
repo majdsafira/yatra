@@ -6,15 +6,15 @@
 @php
 $i = 0 ;
 @endphp
-@foreach ($tours as $pac)
+@foreach ($tour as $pac)
 
-{{-- @if ($i++ < 3) --}}
+@if ($i++ < 3)
 
 
 <h5 class="font-weight-medium">{{$pac->name}}</h5>
 
 
-{{-- @endif --}}
+ @endif
 
 @endforeach
 <section class="swiper-banner">
