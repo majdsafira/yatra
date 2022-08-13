@@ -5,9 +5,11 @@
 @php
 
 use App\Models\Admin;
+use App\Models\User;
+use App\Models\Tours;
 
-//  $case = Help::all()->count();
-//  $volunteer = volenteer::all()->count();
+ $users = User::all()->count();
+ $tours = Tours::all()->count();
  $admin = Admin::all()->count();
 //  $cases = Help::all();
 //  $cases = DB::table('helps')->orderBy('id','desc')->Paginate(10);
@@ -24,40 +26,32 @@ use App\Models\Admin;
 	<div class="card mt-3">
     <div class="card-content">
         <div class="row row-group m-0">
-            <div class="col-12 col-lg-6 col-xl-3 border-light">
+            <div class="col-12 col-lg-6 col-xl-4 border-light">
                 <div class="card-body">
-                  {{-- <h5 class="text-white mb-0">{{$user}} <span class="float-right"></span></h5> --}}
+                 <h5 class="text-white mb-0">{{$users}} <span class="float-right"></span></h5>
                     <div class="progress my-3" style="height:3px;">
                        <div class="progress-bar" style="width:55%"></div>
                     </div>
                   <p class="mb-0 text-white small-font">Total Users</span></p>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 col-xl-3 border-light">
+            <div class="col-12 col-lg-6 col-xl-4 border-light">
                 <div class="card-body">
-                  {{-- <h5 class="text-white mb-0">{{$case}} <span class="float-right"></span></h5> --}}
+                <h5 class="text-white mb-0">{{$tours}} <span class="float-right"></span></h5>
                     <div class="progress my-3" style="height:3px;">
                        <div class="progress-bar" style="width:55%"></div>
                     </div>
-                  <p class="mb-0 text-white small-font">Total Cases </span></p>
+                  <p class="mb-0 text-white small-font">Total Tours </span></p>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 col-xl-3 border-light">
+
+            <div class="col-12 col-lg-6 col-xl-4 border-light">
                 <div class="card-body">
-                  {{-- <h5 class="text-white mb-0">{{$volunteer}} <span class="float-right"></span></h5> --}}
+                  <h5 class="text-white mb-0">{{$admin}} <span class="float-right"></span></h5>
                     <div class="progress my-3" style="height:3px;">
                        <div class="progress-bar" style="width:55%"></div>
                     </div>
-                  <p class="mb-0 text-white small-font">Volanteer </span></p>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 col-xl-3 border-light">
-                <div class="card-body">
-                  {{-- <h5 class="text-white mb-0">{{$admin}} <span class="float-right"></span></h5> --}}
-                    <div class="progress my-3" style="height:3px;">
-                       <div class="progress-bar" style="width:55%"></div>
-                    </div>
-                  <p class="mb-0 text-white small-font">Admins </span></p>
+                  <p class="mb-0 text-white small-font">Total Admins </span></p>
                 </div>
             </div>
         </div>

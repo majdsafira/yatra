@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,27 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>Helpers Admin</title>
+  <title>Yatra Admin</title>
+
   <!-- loader-->
-  <link href="admin/assets/css/pace.min.css" rel="stylesheet"/>
-  <script src="admin/assets/js/pace.min.js"></script>
+  <link href={{asset('dashboard/css/pace.min.css')}} rel="stylesheet"/>
+  <script src={{asset('dashboardjs/pace.min.js')}}></script>
   <!--favicon-->
-  <link rel="icon" href="admin/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href={{asset('dashboard/images/favicon.ico')}} type="image/x-icon">
   <!-- Vector CSS -->
-  <link href="admin/assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet"/>
-  <!-- simplebar CSS-->
-  <link href="admin/assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
+  <link href={{asset('dashboard/plugins/vectormap/jquery-jvectormap-2.0.2.css')}} rel="stylesheet"/>
+  <!-- dashboard CSS-->
+  <link href={{asset('dashboard/plugins/simplebar/css/simplebar.css')}} rel="stylesheet"/>
   <!-- Bootstrap core CSS-->
-  <link href="admin/assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href={{asset('dashboard/css/bootstrap.min.css')}} rel="stylesheet"/>
   <!-- animate CSS-->
-  <link href="admin/assets/css/animate.css" rel="stylesheet" type="text/css"/>
+  <link href={{asset('dashboard/css/animate.css')}} rel="stylesheet" type="text/css"/>
   <!-- Icons CSS-->
-  <link href="admin/assets/css/icons.css" rel="stylesheet" type="text/css"/>
+  <link href={{asset('dashboard/css/icons.css')}} rel="stylesheet" type="text/css"/>
   <!-- Sidebar CSS-->
-  <link href="admin/assets/css/sidebar-menu.css" rel="stylesheet"/>
+  <link href={{asset('dashboard/css/sidebar-menu.css')}} rel="stylesheet"/>
   <!-- Custom Style-->
-  <link href="admin/assets/css/app-style.css" rel="stylesheet"/>
-  <link href="admin/assets/css/toggle.css" rel="stylesheet"/>
+  <link href={{asset('dashboard/css/app-style.css')}} rel="stylesheet"/>
+  <link href={{asset('dashboard/css/toggle.css')}} rel="stylesheet"/>
 
 
 
@@ -41,8 +43,7 @@
    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
       <a href="index.html">
-       <img src="/assets/images/hel.png" class="logo-icon" alt="logo icon">
-       <h5 class="logo-text">Helpers Admin</h5>
+       <h5 class="logo-text">Yatra Admin</h5>
      </a>
    </div>
    <ul class="sidebar-menu do-nicescrol">
@@ -54,14 +55,14 @@
       </li>
 
       <li>
-        <a href="/donate">
-          <i class="zmdi zmdi-invert-colors"></i> <span>Donate</span>
+        <a href="/tours">
+          <i class="zmdi zmdi-invert-colors"></i> <span>Tours</span>
         </a>
       </li>
 
       <li>
         <a href="/volenteersinfo">
-          <i class="zmdi zmdi-slideshare"></i> <span>Volnteer</span>
+          <i class="zmdi zmdi-slideshare"></i> <span>Bookings</span>
         </a>
       </li>
       <li>
@@ -116,8 +117,7 @@
         </li>
         <li class="dropdown-divider"></li>
         <li class="dropdown-item"><i class="icon-power mr-2"></i>
-          <a href="/loginout"> Logout
-          </a>
+          <a href="/loginout"> Logout </a>
           </li>
       </ul>
     </li>

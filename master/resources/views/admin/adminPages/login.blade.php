@@ -8,18 +8,18 @@
   <meta name="author" content=""/>
   <title>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</title>
   <!-- loader-->
-  <link href="admin/assets/css/pace.min.css" rel="stylesheet"/>
-  <script src="admin/assets/js/pace.min.js"></script>
+  <link href="dashboard/css/pace.min.css" rel="stylesheet"/>
+  <script src="dashboard/js/pace.min.js"></script>
   <!--favicon-->
-  <link rel="icon" href="admin/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="dashboard/images/favicon.ico" type="image/x-icon">
   <!-- Bootstrap core CSS-->
-  <link href="admin/assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="dashboard/css/bootstrap.min.css" rel="stylesheet"/>
   <!-- animate CSS-->
-  <link href="admin/assets/css/animate.css" rel="stylesheet" type="text/css"/>
+  <link href="dashboard/css/animate.css" rel="stylesheet" type="text/css"/>
   <!-- Icons CSS-->
-  <link href="admin/assets/css/icons.css" rel="stylesheet" type="text/css"/>
+  <link href="dashboard/css/icons.css" rel="stylesheet" type="text/css"/>
   <!-- Custom Style-->
-  <link href="admin/assets/css/app-style.css" rel="stylesheet"/>
+  <link href="dashboard/css/app-style.css" rel="stylesheet"/>
 
 </head>
 
@@ -127,15 +127,15 @@
 	</div><!--wrapper-->
 
   <!-- Bootstrap core JavaScript-->
-  <script src="admin/assets/js/jquery.min.js"></script>
-  <script src="admin/assets/js/popper.min.js"></script>
-  <script src="admin/assets/js/bootstrap.min.js"></script>
+  <script src="dashboard/js/jquery.min.js"></script>
+  <script src="dashboard/js/popper.min.js"></script>
+  <script src="dashboard/js/bootstrap.min.js"></script>
 
   <!-- sidebar-menu js -->
-  <script src="admin/assets/js/sidebar-menu.js"></script>
+  <script src="dashboard/js/sidebar-menu.js"></script>
 
   <!-- Custom scripts -->
-  <script src="admin/assets/js/app-script.js"></script>
+  <script src="dashboard/js/app-script.js"></script>
 
 </body>
 </html>

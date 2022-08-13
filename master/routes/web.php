@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminTemplateController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ToursController;
+use App\Http\Controllers\UserController;
+
 
 
 /*
@@ -19,11 +21,14 @@ use App\Http\Controllers\ToursController;
 
 
 //home
-Route::resource('/', ToursController::class);
+ Route::resource('tours', ToursController::class);
 
 
 Route::get('/tourdetails', function () {
     return view('tourdetails');
+});
+Route::get('/home', function () {
+    return view('home');
 });
 Route::get('/about', function () {
     return view('about');
@@ -52,6 +57,7 @@ Route::get('/tourgrid', function () {
 
 // admin route
 
+Route::resource('users', UserController::class);
 
 Route::resource('admin', AdminController::class);
 Route::get('adminLogin', 'App\Http\Controllers\AdminController@login');

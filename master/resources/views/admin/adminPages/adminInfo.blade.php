@@ -59,9 +59,9 @@
                    <tr>
                      <th>#</th>
                      <th>Name</th>
+                     <th> </th>
                      <th>Email</th>
-                     <th>Create Date</th>
-                     <th>Update Date</th>
+
                      <th>Edit</th>
                    </tr>
                    </thead>
@@ -73,9 +73,9 @@
                     <tr>
                     <td>{{++$i}}</td>
                     <td>{{$info->name}}</td>
+                    <td> </td>
                     <td>{{$info->email}}</td>
-                    <td>{{$info->created_at}}</td>
-                    <td>{{$info->updated_at}}</td>
+
                     <td> <a href="admin/{{$info->id}}/edit" class="btn btn-primary">Edit</button></a></td>
 
                    </tr>

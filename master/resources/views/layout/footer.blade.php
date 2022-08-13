@@ -2,20 +2,8 @@
     <div class="footer-upper">
         <div class="container">
             <div class="newsletter text-center">
-                <div class="section-title section-title-white text-center">
-                    <h2>Newsletter Signup</h2>
-                    <div class="section-icon section-icon-white">
-                        <i class="flaticon-diamond"></i>
-                    </div>
-                    <p>Subscribe to our weekly newsletter to get updated on our latest deals</p>
-                </div>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="search">
-                        <a href="#"><span class="search_btn"><i class="fa fa-paper-plane" aria-hidden="true"></i> Sign
-                                Up</span></a>
-                    </div>
-                </form>
+
+
             </div>
             <div class="footer-links">
                 <div class="row">
@@ -37,36 +25,19 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="footer-social-links">
-                                <ul>
-                                    <li class="social-icon"><a href="#"><i class="fa fa-facebook"
-                                                aria-hidden="true"></i></a></li>
-                                    <li class="social-icon"><a href="#"><i class="fa fa-instagram"
-                                                aria-hidden="true"></i></a></li>
-                                    <li class="social-icon"><a href="#"><i class="fa fa-twitter"
-                                                aria-hidden="true"></i></a></li>
-                                    <li class="social-icon"><a href="#"><i class="fa fa-youtube"
-                                                aria-hidden="true"></i></a></li>
-                                    <li class="social-icon"><a href="#"><i class="fa fa-google"
-                                                aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
+
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="footer-links-list footer-margin">
                             <h3>Browse Tour</h3>
                             <ul>
-                                <li><a href="#">Cyclades <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                                <li><a href="#">North Ionian <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                <li><a href="#">Cyclades </a></li>
+                                <li><a href="#">North Ionian </a>
                                 </li>
-                                <li><a href="#">Sporades <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                                <li><a href="#">View all Destinations <i class="fa fa-angle-right"
-                                            aria-hidden="true"></i></a></li>
-                                <li><a href="#">View all Yatchs <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                                </li>
-                                <li><a href="#">View all Cruises <i class="fa fa-angle-right"
-                                            aria-hidden="true"></i></a></li>
+                                <li><a href="#">Sporades </a></li>
+                                <li><a href="#">View all Destinations         </a></li>
+                              
                             </ul>
                         </div>
                     </div>

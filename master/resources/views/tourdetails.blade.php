@@ -171,7 +171,7 @@
                                 style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="detail-timeline detail-box">
+                    {{-- <div class="detail-timeline detail-box">
                         <div class="detail-title">
                             <h3>Tour Timeline</h3>
                         </div>
@@ -277,7 +277,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="top-attractions detail-box">
                         <div class="detail-title">
                             <h3>Hotels and Availabilities</h3>

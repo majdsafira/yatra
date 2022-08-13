@@ -14,8 +14,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
-    }
+        $users = User::all();
+        return view('admin.users.usersInfo', compact('users'));    }
 
     /**
      * Show the form for creating a new resource.
@@ -78,8 +78,11 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user)
+    public function destroy( $id)
     {
-        //
-    }
+        $users = User::find($id);
+           $users->delete();
+           return redirect('/users');    }
+
+
 }

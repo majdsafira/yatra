@@ -36,9 +36,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="about-item">
-                    <div class="about-icon">
-                        <i class="fa fa-superpowers" aria-hidden="true"></i>
-                    </div>
+
                     <div class="about-content">
                         <h3>Perfect Planning</h3>
                         <p>Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive
@@ -48,9 +46,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="about-item">
-                    <div class="about-icon">
-                        <i class="fa fa-paw" aria-hidden="true"></i>
-                    </div>
+
                     <div class="about-content">
                         <h3>Secure Venues</h3>
                         <p>We work hard to secure the best hotel rates in the most popular destinations. Search and book
@@ -60,9 +56,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="about-item">
-                    <div class="about-icon">
-                        <i class="fa fa-fire" aria-hidden="true"></i>
-                    </div>
+
                     <div class="about-content">
                         <h3>Beautiful Memories</h3>
                         <p>Book international vacation packages with us and create memories that will last a lifetime!
@@ -87,7 +81,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-3">
                 <div class="team-item">
                     <div class="team-image">
                         <img src="images/testemonial1.jpg" alt="Image">
@@ -98,39 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="team-item">
-                    <div class="team-image">
-                        <img src="images/testemonial2.jpg" alt="Image">
-                    </div>
-                    <div class="team-content">
-                        <h3>Peter Parker</h3>
-                        <p>Tour Advisor</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="team-item">
-                    <div class="team-image">
-                        <img src="images/testemonial3.jpg" alt="Image">
-                    </div>
-                    <div class="team-content">
-                        <h3>Peter Parker</h3>
-                        <p>Tour Advisor</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="team-item">
-                    <div class="team-image">
-                        <img src="images/testemonial1.jpg" alt="Image">
-                    </div>
-                    <div class="team-content">
-                        <h3>Peter Parker</h3>
-                        <p>Tour Advisor</p>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
@@ -172,13 +134,7 @@
                     <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat
                         in in velit quis arcu ornare laoreet urabitur adipiscing luctus massa nteger ut purus ac augue
                         commodo commodo unc nec mi eu justo tempor consectetuer tiam.</p>
-                    <div class="deal-rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star-o"></span>
-                    </div>
+
                     <h5><a href="#">Susan Doe, Houston</a></h5>
                 </div>
             </div>
@@ -189,13 +145,7 @@
                     <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat
                         in in velit quis arcu ornare laoreet urabitur adipiscing luctus massa nteger ut purus ac augue
                         commodo commodo unc nec mi eu justo tempor consectetuer tiam.</p>
-                    <div class="deal-rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star-o"></span>
-                    </div>
+
                     <h5><a href="#">Susan Doe, Houston</a></h5>
                 </div>
             </div>
@@ -206,13 +156,7 @@
                     <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat
                         in in velit quis arcu ornare laoreet urabitur adipiscing luctus massa nteger ut purus ac augue
                         commodo commodo unc nec mi eu justo tempor consectetuer tiam.</p>
-                    <div class="deal-rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star-o"></span>
-                    </div>
+
                     <h5><a href="#">Susan Doe, Houston</a></h5>
                 </div>
             </div>
@@ -223,13 +167,7 @@
                     <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat
                         in in velit quis arcu ornare laoreet urabitur adipiscing luctus massa nteger ut purus ac augue
                         commodo commodo unc nec mi eu justo tempor consectetuer tiam.</p>
-                    <div class="deal-rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star-o"></span>
-                    </div>
+                     
                     <h5><a href="#">Susan Doe, Houston</a></h5>
                 </div>
             </div>
@@ -240,13 +178,7 @@
                     <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat
                         in in velit quis arcu ornare laoreet urabitur adipiscing luctus massa nteger ut purus ac augue
                         commodo commodo unc nec mi eu justo tempor consectetuer tiam.</p>
-                    <div class="deal-rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star-o"></span>
-                    </div>
+
                     <h5><a href="#">Susan Doe, Houston</a></h5>
                 </div>
             </div>

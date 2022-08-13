@@ -58,11 +58,11 @@
                         <div id="navbar" class="navbar-nav-wrapper">
                             <ul class="nav navbar-nav" id="responsive-menu">
                                 <li >
-                                    <a href="/">Home </a>
+                                    <a href="/home">Home </a>
 
                                 </li>
                                 <li >
-                                    <a href="/tourdetails">Tours </a>
+                                    <a href="/tourgrid">Tours </a>
 
                                 <li>
                                     <a href="/about">About Us </a>

@@ -3,7 +3,7 @@
 	<footer class="footer">
       <div class="container">
         <div class="text-center">
-          Copyright © 2022 Helpers Admin
+          Copyright © 2022 Yatra Dashboard
         </div>
       </div>
     </footer>
@@ -50,25 +50,28 @@
   </div><!--End wrapper-->
 
   <!-- Bootstrap core JavaScript-->
-  <script src="admin/assets/js/jquery.min.js"></script>
-  <script src="admin/assets/js/popper.min.js"></script>
-  <script src="admin/assets/js/bootstrap.min.js"></script>
+  <script src={{asset('dashboard/js/jquery.min.js')}}></script>
+  <script src={{asset('dashboard/js/popper.min.js')}}></script>
+  <script src={{asset('dashboard/js/bootstrap.min.js')}}></script>
 
  <!-- simplebar js -->
-  <script src="admin/assets/plugins/simplebar/js/simplebar.js"></script>
+  <script src={{asset('dashboard/plugins/simplebar/js/simplebar.js')}}></script>
   <!-- sidebar-menu js -->
-  <script src="admin/assets/js/sidebar-menu.js"></script>
+  <script src={{asset('dashboard/js/sidebar-menu.js')}}></script>
   <!-- loader scripts -->
-  <script src="admin/assets/js/jquery.loading-indicator.js"></script>
+  <script src={{asset('dashboard/js/jquery.loading-indicator.js')}}></script>
   <!-- Custom scripts -->
-  <script src="admin/assets/js/app-script.js"></script>
+  <script src={{asset('dashboard/js/app-script.js')}}></script>
   <!-- Chart js -->
 
-  <script src="admin/assets/plugins/Chart.js/Chart.min.js"></script>
+  <script src={{asset('dashboard/plugins/Chart.js/Chart.min.js')}}></script>
 
   <!-- Index js -->
-  <script src="admin/assets/js/index.js"></script>
+  <script src={{asset('dashboard/js/index.js')}}></script>
 
+  {{-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> --}}
 
 </body>
 </html>

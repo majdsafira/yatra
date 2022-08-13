@@ -17,12 +17,17 @@ class CreateToursTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('description');
+            $table->string('departure');
+            $table->string('departure_time');
+            $table->string('maximum_travellers');
+            $table->string('languages');
+            $table->string('popular_places');
             $table->integer('price');
             $table->string('image1');
             $table->string('image2');
             $table->string('image3');
             $table->string('image4');
-           
+
             $table->timestamps();
         });
     }

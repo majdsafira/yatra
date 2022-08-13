@@ -2,7 +2,7 @@
 
 @section('content')
 
-
+{{--
 @php
 $i = 0 ;
 @endphp
@@ -16,7 +16,7 @@ $i = 0 ;
 
  @endif
 
-@endforeach
+@endforeach --}}
 <section class="swiper-banner">
     <div class="slider">
         <div class="swiper-container">
@@ -162,7 +162,7 @@ $i = 0 ;
                         <p class="package-days"><i class="flaticon-time"></i> 5 days</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                         <div class="package-info">
-                            <a href="tour-detail.html" class="btn-blue btn-red">View more details</a>
+                            <a href="/tourdetails" class="btn-blue btn-red">View more details</a>
                         </div>
                     </div>
                 </div>
@@ -181,7 +181,7 @@ $i = 0 ;
                         <p class="package-days"><i class="flaticon-time"></i> 5 days</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                         <div class="package-info">
-                            <a href="tour-detail.html" class="btn-blue btn-red">View more details</a>
+                            <a href="/tourdetails" class="btn-blue btn-red">View more details</a>
                         </div>
                     </div>
                 </div>
@@ -200,7 +200,7 @@ $i = 0 ;
                         <p class="package-days"><i class="flaticon-time"></i> 5 days</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                         <div class="package-info">
-                            <a href="tour-detail.html" class="btn-blue btn-red">View more details</a>
+                            <a href="/tourdetails" class="btn-blue btn-red">View more details</a>
                         </div>
                     </div>
                 </div>
@@ -219,7 +219,7 @@ $i = 0 ;
                         <p class="package-days"><i class="flaticon-time"></i> 5 days</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                         <div class="package-info">
-                            <a href="tour-detail.html" class="btn-blue btn-red">View more details</a>
+                            <a href="/tourdetails" class="btn-blue btn-red">View more details</a>
                         </div>
                     </div>
                 </div>
@@ -238,7 +238,7 @@ $i = 0 ;
                         <p class="package-days"><i class="flaticon-time"></i> 5 days</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                         <div class="package-info">
-                            <a href="tour-detail.html" class="btn-blue btn-red">View more details</a>
+                            <a href="/tourdetails" class="btn-blue btn-red">View more details</a>
                         </div>
                     </div>
                 </div>
@@ -257,7 +257,7 @@ $i = 0 ;
                         <p class="package-days"><i class="flaticon-time"></i> 5 days</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                         <div class="package-info">
-                            <a href="tour-detail.html" class="btn-blue btn-red">View more details</a>
+                            <a href="/tourdetails" class="btn-blue btn-red">View more details</a>
                         </div>
                     </div>
                 </div>
@@ -266,10 +266,82 @@ $i = 0 ;
     </div>
 </section>
 
+
+<section class="countdown-section">
+    <div class="container">
+        <div class="countdown-title">
+            <h2>Special Tour in May, Discover <span>Thailand</span> for 50 Customers with <span>Discount 30%</span></h2>
+            <p>It’s limited seating! Hurry up</p>
+        </div>
+        <div class="countdown countdown-container">
+            <p id="demo"></p>
+        </div>
+    </div>
+    <div class="testimonial-overlay"></div>
+</section>
+
+<section class="top-destinations">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>Top Destinations</h2>
+            <div class="section-icon">
+                <i class="flaticon-diamond"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.Duis aute irure dolor in reprehenderit..</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="top-destination-item">
+                    <img class="img-responsive" src="images/deal1.jpg" alt="Image">
+                    <div class="overlay">
+                        <h2><a href="tour-detail.html">Bahamas</a></h2>
+                        <p>Plan Your Tour to Bahamas With Us.</p>
+                    </div>
+                </div>
+                <div class="top-destination-item">
+                    <img class="img-responsive" src="images/deal2.jpg" alt="Image">
+                    <div class="overlay">
+                        <h2><a href="tour-detail.html">Italy</a></h2>
+                        <p>Plan Your Tour to Bahamas With Us.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="top-destination-item destination-margin">
+                    <img class="img-responsive" src="images/deal5.jpg" alt="Image">
+                    <div class="overlay overlay-full">
+                        <h2><a href="tour-detail.html">Egypt</a></h2>
+                        <p>Plan Your Tour to Bahamas With Us.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="top-destination-item">
+                    <img class="img-responsive" src="images/deal3.jpg" alt="Image">
+                    <div class="overlay">
+                        <h2><a href="tour-detail.html">Nepal</a></h2>
+                        <p>Plan Your Tour to Bahamas With Us.</p>
+                    </div>
+                </div>
+                <div class="top-destination-item">
+                    <img class="img-responsive" src="images/deal4.jpg" alt="Image">
+                    <div class="overlay">
+                        <h2><a href="tour-detail.html">Thailand</a></h2>
+                        <p>Plan Your Tour to Bahamas With Us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 <section class="deals">
     <div class="container">
         <div class="section-title section-title-white text-center">
-            <h2>Last Minute Deals</h2>
+            <h2>Best Offers Tours</h2>
             <div class="section-icon">
                 <i class="flaticon-diamond"></i>
             </div>
@@ -412,403 +484,7 @@ $i = 0 ;
     <div class="section-overlay"></div>
 </section>
 
-<section id="bucket-list" class="bucket-list">
-    <div class="bucket-icons">
-        <div class="container">
-            <div class="section-title text-center">
-                <h2>Top up your Bucket List</h2>
-                <div class="section-icon">
-                    <i class="flaticon-diamond"></i>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.Duis aute irure dolor in reprehenderit..</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="mt_filter">
-                        <ul class="list-inline text-center filter">
-                            <li class="active"><a href="#" data-filter=".cycling"><i
-                                        class="flaticon-bicycle"></i><span>CYCLING</span></a></li>
-                            <li><a href="#" data-filter=".sailing"><i
-                                        class="flaticon-sailboat"></i><span>SAILING</span></a></li>
-                            <li><a href="#" data-filter=".wildlife"><i
-                                        class="flaticon-wolf"></i><span>WILDLIFE</span></a></li>
-                            <li><a href="#" data-filter=".family"><i class="flaticon-family"></i><span>FAMILY</span></a>
-                            </li>
-                            <li><a href="#" data-filter=". "><i class="flaticon-man-in-hike"></i><span>HIKING</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bucket-content">
-        <div class="container">
-            <div class="row isotopeContainer">
-                <div class="col-lg-6 no-padding isotopeSelector cycling wildlife family hiking">
-                    <div class="hovereffect-bucket bucket-item">
-                        <div class="bucket-image"><img src="images/bucket1.jpg" alt="image" class="img-responsive" />
-                        </div>
-                        <div class="bucket-item-content">
-                            <h3><a href="tour-detail.html">Sailing Thailand - Phucket to Phucket</a></h3>
-                            <span>7 days </span><span class="old-price"> $1749 </span><span> $1500</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 no-padding isotopeSelector cycling family hiking">
-                    <div class="hovereffect-bucket bucket-item">
-                        <div class="bucket-image"><img src="images/bucket5.jpg" alt="image" class="img-responsive" />
-                        </div>
-                        <div class="bucket-item-content">
-                            <h3><a href="tour-detail.html">Sailing Thailand - Phucket to Phucket</a></h3>
-                            <span>7 days </span><span class="old-price"> $1749 </span><span> $1500</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 no-padding isotopeSelector family hiking">
-                    <div class="hovereffect-bucket bucket-item">
-                        <div class="bucket-image"><img src="images/bucket3.jpg" alt="image" class="img-responsive" />
-                        </div>
-                        <div class="bucket-item-content">
-                            <h3><a href="tour-detail.html">Sailing Thailand - Phucket to Phucket</a></h3>
-                            <span>7 days </span><span class="old-price"> $1749 </span><span> $1500</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 no-padding isotopeSelector wildlife family hiking">
-                    <div class="hovereffect-bucket bucket-item">
-                        <div class="bucket-image"><img src="images/bucket2.jpg" alt="image" class="img-responsive" />
-                        </div>
-                        <div class="bucket-item-content">
-                            <h3><a href="tour-detail.html">Sailing Thailand - Phucket to Phucket</a></h3>
-                            <span>7 days </span><span class="old-price"> $1749 </span><span> $1500</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 no-padding isotopeSelector sailing wildlife family hiking">
-                    <div class="hovereffect-bucket bucket-item">
-                        <div class="bucket-image"><img src="images/bucket4.jpg" alt="image" class="img-responsive" />
-                        </div>
-                        <div class="bucket-item-content">
-                            <h3><a href="tour-detail.html">Sailing Thailand - Phucket to Phucket</a></h3>
-                            <span>7 days </span><span class="old-price"> $1749 </span><span> $1500</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 no-padding isotopeSelector sailing wildlife family hiking">
-                    <div class="hovereffect-bucket bucket-item">
-                        <div class="bucket-image"><img src="images/bucket5.jpg" alt="image" class="img-responsive" />
-                        </div>
-                        <div class="bucket-item-content">
-                            <h3><a href="tour-detail.html">Sailing Thailand - Phucket to Phucket</a></h3>
-                            <span>7 days </span><span class="old-price"> $1749 </span><span> $1500</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 no-padding isotopeSelector family hiking">
-                    <div class="hovereffect-bucket bucket-item">
-                        <div class="bucket-image"><img src="images/bucket4.jpg" alt="image" class="img-responsive" />
-                        </div>
-                        <div class="bucket-item-content">
-                            <h3><a href="tour-detail.html">Sailing Thailand - Phucket to Phucket</a></h3>
-                            <span>7 days </span><span class="old-price"> $1749 </span><span> $1500</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 no-padding isotopeSelector family hiking">
-                    <div class="hovereffect-bucket bucket-item">
-                        <div class="bucket-image"><img src="images/bucket5.jpg" alt="image" class="img-responsive" />
-                        </div>
-                        <div class="bucket-item-content">
-                            <h3><a href="tour-detail.html">Sailing Thailand - Phucket to Phucket</a></h3>
-                            <span>7 days </span><span class="old-price"> $1749 </span><span> $1500</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 no-padding isotopeSelector sailing wildlife family hiking">
-                    <div class="hovereffect-bucket bucket-item">
-                        <div class="bucket-image"><img src="images/bucket1.jpg" alt="image" class="img-responsive" />
-                        </div>
-                        <div class="bucket-item-content">
-                            <h3><a href="tour-detail.html">Sailing Thailand - Phucket to Phucket</a></h3>
-                            <span>7 days </span><span class="old-price"> $1749 </span><span> $1500</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 no-padding isotopeSelector  wildlife family">
-                    <div class="hovereffect-bucket bucket-item">
-                        <div class="bucket-image"><img src="images/bucket5.jpg" alt="image" class="img-responsive" />
-                        </div>
-                        <div class="bucket-item-content">
-                            <h3><a href="tour-detail.html">Sailing Thailand - Phucket to Phucket</a></h3>
-                            <span>7 days </span><span class="old-price"> $1749 </span><span> $1500</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 no-padding isotopeSelector wildlife family">
-                    <div class="hovereffect-bucket bucket-item">
-                        <div class="bucket-image"><img src="images/bucket1.jpg" alt="image" class="img-responsive" />
-                        </div>
-                        <div class="bucket-item-content">
-                            <h3><a href="tour-detail.html">Sailing Thailand - Phucket to Phucket</a></h3>
-                            <span>7 days </span><span class="old-price"> $1749 </span><span> $1500</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 no-padding isotopeSelector sailing wildlife family hiking">
-                    <div class="hovereffect-bucket bucket-item">
-                        <div class="bucket-image"><img src="images/bucket6.jpg" alt="image" class="img-responsive" />
-                        </div>
-                        <div class="bucket-item-content">
-                            <h3><a href="tour-detail.html">Sailing Thailand - Phucket to Phucket</a></h3>
-                            <span>7 days </span><span class="old-price"> $1749 </span><span> $1500</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 no-padding isotopeSelector cycling sailing">
-                    <div class="hovereffect-bucket bucket-item">
-                        <div class="bucket-image"><img src="images/bucket5.jpg" alt="image" class="img-responsive" />
-                        </div>
-                        <div class="bucket-item-content">
-                            <h3><a href="tour-detail.html">Sailing Thailand - Phucket to Phucket</a></h3>
-                            <span>7 days </span><span class="old-price"> $1749 </span><span> $1500</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 no-padding isotopeSelector cycling sailing">
-                    <div class="hovereffect-bucket bucket-item">
-                        <div class="bucket-image"><img src="images/bucket1.jpg" alt="image" class="img-responsive" />
-                        </div>
-                        <div class="bucket-item-content">
-                            <h3><a href="tour-detail.html">Sailing Thailand - Phucket to Phucket</a></h3>
-                            <span>7 days </span><span class="old-price"> $1749 </span><span> $1500</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-overlay"></div>
-        </div>
-    </div>
-</section>
 
-<section class="top-destinations">
-    <div class="container">
-        <div class="section-title text-center">
-            <h2>Top Destinations</h2>
-            <div class="section-icon">
-                <i class="flaticon-diamond"></i>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.Duis aute irure dolor in reprehenderit..</p>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4">
-                <div class="top-destination-item">
-                    <img class="img-responsive" src="images/deal1.jpg" alt="Image">
-                    <div class="overlay">
-                        <h2><a href="tour-detail.html">Bahamas</a></h2>
-                        <p>Plan Your Tour to Bahamas With Us.</p>
-                    </div>
-                </div>
-                <div class="top-destination-item">
-                    <img class="img-responsive" src="images/deal2.jpg" alt="Image">
-                    <div class="overlay">
-                        <h2><a href="tour-detail.html">Italy</a></h2>
-                        <p>Plan Your Tour to Bahamas With Us.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4">
-                <div class="top-destination-item destination-margin">
-                    <img class="img-responsive" src="images/deal5.jpg" alt="Image">
-                    <div class="overlay overlay-full">
-                        <h2><a href="tour-detail.html">Egypt</a></h2>
-                        <p>Plan Your Tour to Bahamas With Us.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4">
-                <div class="top-destination-item">
-                    <img class="img-responsive" src="images/deal3.jpg" alt="Image">
-                    <div class="overlay">
-                        <h2><a href="tour-detail.html">Nepal</a></h2>
-                        <p>Plan Your Tour to Bahamas With Us.</p>
-                    </div>
-                </div>
-                <div class="top-destination-item">
-                    <img class="img-responsive" src="images/deal4.jpg" alt="Image">
-                    <div class="overlay">
-                        <h2><a href="tour-detail.html">Thailand</a></h2>
-                        <p>Plan Your Tour to Bahamas With Us.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="trip-ad">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="trip-ad-content">
-                    <div class="ad-title">
-                        <h2>Explore The <span>Thailand Trip</span></h2>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismody
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim adi minim veniam, qu
-                        nostrud exerci tation dolore magna aliquam erat volutpat.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismody
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim adi minim veniam, qu
-                        nostrud exerci tation dolore magna aliquam erat volutpat.</p>
-                    <div class="trip-ad-btn">
-                        <a href="tour-detail.html" class="btn-blue btn-red">BOOK NOW</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="ad-price">
-                    <div class="ad-price-inner">
-                        <span>Starting at <span class="rate">$300</span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="testimonials">
-    <div class="section-title text-center">
-        <h2>Best Rated Travel Agency</h2>
-        <div class="section-icon section-icon-white">
-            <i class="flaticon-diamond"></i>
-        </div>
-    </div>
-
-    <div id="testimonial_094" class="carousel slide testimonial_094_indicators thumb_scroll_x swipe_x ps_easeOutSine"
-        data-ride="carousel" data-pause="hover" data-interval="3000" data-duration="1000">
-
-        <ol class="carousel-indicators">
-            <li data-target="#testimonial_094" data-slide-to="0" class="active">
-                <img src="images/testemonial1.jpg" alt="testimonial_094_01">
-            </li>
-            <li data-target="#testimonial_094" data-slide-to="1">
-                <img src="images/testemonial2.jpg" alt="testimonial_094_02">
-            </li>
-            <li data-target="#testimonial_094" data-slide-to="2">
-                <img src="images/testemonial3.jpg" alt="testimonial_094_03">
-            </li>
-            <li data-target="#testimonial_094" data-slide-to="3">
-                <img src="images/testemonial4.jpg" alt="testimonial_094_04">
-            </li>
-            <li data-target="#testimonial_094" data-slide-to="4">
-                <img src="images/testemonial5.jpg" alt="testimonial_094_05">
-            </li>
-        </ol>
-
-        <div class="carousel-inner" role="listbox">
-
-            <div class="carousel-item active">
-
-                <div class="testimonial_094_slide">
-                    <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat
-                        in in velit quis arcu ornare laoreet urabitur adipiscing luctus massa nteger ut purus ac augue
-                        commodo commodo unc nec mi eu justo tempor consectetuer tiam.</p>
-                    <div class="deal-rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star-o"></span>
-                    </div>
-                    <h5><a href="#">Susan Doe, Houston</a></h5>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-
-                <div class="testimonial_094_slide">
-                    <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat
-                        in in velit quis arcu ornare laoreet urabitur adipiscing luctus massa nteger ut purus ac augue
-                        commodo commodo unc nec mi eu justo tempor consectetuer tiam.</p>
-                    <div class="deal-rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star-o"></span>
-                    </div>
-                    <h5><a href="#">Susan Doe, Houston</a></h5>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-
-                <div class="testimonial_094_slide">
-                    <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat
-                        in in velit quis arcu ornare laoreet urabitur adipiscing luctus massa nteger ut purus ac augue
-                        commodo commodo unc nec mi eu justo tempor consectetuer tiam.</p>
-                    <div class="deal-rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star-o"></span>
-                    </div>
-                    <h5><a href="#">Susan Doe, Houston</a></h5>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-
-                <div class="testimonial_094_slide">
-                    <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat
-                        in in velit quis arcu ornare laoreet urabitur adipiscing luctus massa nteger ut purus ac augue
-                        commodo commodo unc nec mi eu justo tempor consectetuer tiam.</p>
-                    <div class="deal-rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star-o"></span>
-                    </div>
-                    <h5><a href="#">Susan Doe, Houston</a></h5>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-
-                <div class="testimonial_094_slide">
-                    <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat
-                        in in velit quis arcu ornare laoreet urabitur adipiscing luctus massa nteger ut purus ac augue
-                        commodo commodo unc nec mi eu justo tempor consectetuer tiam.</p>
-                    <div class="deal-rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-o"></span>
-                        <span class="fa fa-star-o"></span>
-                    </div>
-                    <h5><a href="#">Susan Doe, Houston</a></h5>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="countdown-section">
-    <div class="container">
-        <div class="countdown-title">
-            <h2>Special Tour in May, Discover <span>Thailand</span> for 50 Customers with <span>Discount 30%</span></h2>
-            <p>It’s limited seating! Hurry up</p>
-        </div>
-        <div class="countdown countdown-container">
-            <p id="demo"></p>
-        </div>
-    </div>
-    <div class="testimonial-overlay"></div>
-</section>
 
 <section class="trusted-partners">
     <div class="container">
