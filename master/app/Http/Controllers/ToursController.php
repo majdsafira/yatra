@@ -39,8 +39,8 @@ class ToursController extends Controller
     public function create()
     {
 
-        //
-        // return view('admin.tour.addTour');
+
+        return view('admin.tours.addTour');
     }
 
     /**
@@ -71,7 +71,7 @@ class ToursController extends Controller
             $tours->maximum_travellers = $request->input(['maximum_travellers']);
             $tours->popular_places = $request->input(['popular_places']);
             $tours->price = $request->input(['price']);
-            $donate->save();
+            $tours->save();
             return redirect('/tours')
                 ->with(('status' . 'Your informasion submited successfully'));}
 

@@ -54,7 +54,7 @@
             </div>
 
            <div class="form-group">
-            <input type="submit" class="btn btn-light px-5 " value="Edit">
+            <input type="submit" class="btn btn-light px-5 " value="UPDATE">
           </div>
           </form>
          </div>
