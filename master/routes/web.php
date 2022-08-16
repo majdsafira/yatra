@@ -59,10 +59,10 @@ Route::get('/tourgrid', function () {
 
 Route::resource('users', UserController::class);
 
-Route::resource('admin', AdminController::class);
 Route::get('adminLogin', 'App\Http\Controllers\AdminController@login');
 Route::get('/loginad', 'App\Http\Controllers\AdminController@authLogin')->name('login-auth');
 Route::get('/loginout', 'App\Http\Controllers\AdminController@logout')->name('logout');
 Route::get('dash', 'App\Http\Controllers\AdminController@viewDash');
+Route::resource('admin', AdminController::class);
 
 

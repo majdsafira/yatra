@@ -58,6 +58,7 @@ class ToursController extends Controller
             'departure' => 'required',
             'departure_time' => 'required',
             'maximum_travellers' => 'required',
+            'languages' => 'required',
             'popular_places' => 'required',
             'price' => 'required',
 
@@ -69,6 +70,7 @@ class ToursController extends Controller
             $tours->departure = $request->input('departure');
             $tours->departure_time = $request->input('departure_time');
             $tours->maximum_travellers = $request->input(['maximum_travellers']);
+            $tours->languages = $request->input(['languages']);
             $tours->popular_places = $request->input(['popular_places']);
             $tours->price = $request->input(['price']);
             $tours->save();

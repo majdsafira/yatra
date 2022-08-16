@@ -47,13 +47,6 @@
                             <input value="(123) 123-456" type="text">
                             <label>Email Address *</label>
                             <input value="tom@example.com" type="text">
-                            <label>Your Bio *</label>
-                            <textarea name="notes" id="notes" cols="30"
-                                rows="10">Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper</textarea>
-                            <label class="twitter-input"><i class="fa fa-twitter"></i> Twitter</label>
-                            <input placeholder="https://www.twitter.com/" type="text">
-                            <label class="fb-input"><i class="fa fa-facebook-square"></i> Facebook</label>
-                            <input placeholder="https://www.facebook.com/" type="text">
                         </div>
                         <button class="button">Save Changes</button>
                     </div>

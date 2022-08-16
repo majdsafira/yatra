@@ -19,23 +19,40 @@
            <form action="{{route('tours.store')}}" method="POST">
             @csrf
 
-         <div class="form-group">
-          <label for="input-1">Name</label>
-          <input type="text" class="form-control" id="input-1" placeholder="Enter Your Name" name="name">
-          <span class ="text-danger">@error('name') {{$message}} @enderror</span>
-         </div>
-         <div class="form-group">
-          <label for="input-2">Email</label>
-          <input type="email" class="form-control" name="email" id="input-2" placeholder="Enter Your Email Address">
-            <span class ="text-danger">@error('email') {{$message}} @enderror</span>
 
-         </div>
-         <div class="form-group">
-          <label for="input-4">Password</label>
-          <input type="password" class="form-control" name="password" id="input-4" placeholder="Enter Password">
-             <span class ="text-danger">@error('password') {{$message}} @enderror</span>
+            <div class="form-group">
+                <label for="input-1">Name</label>
+                <input type="text" class="form-control" id="input-1" placeholder="Enter Your Name" name="name"  >
+               </div>
+               <div class="form-group">
+                   <label for="input-2">Description</label>
+                   <input type="text" class="form-control" name="description" id="input-2" placeholder="Enter Your Email Address"  >
+                </div>
+                <div class="form-group">
+                    <label for="input-4">Departure</label>
+                    <input type="phone" class="form-control" name="departure" id="input-4" >
+                </div>
+                <div class="form-group">
+                 <label for="input-1">Departure Time</label>
+                 <input type="text" class="form-control" id="input-1" placeholder="Enter Your Address" name="departure_time" >
+                </div>
+                <div class="form-group">
+                 <label for="input-1">Maximum Travellers</label>
+                 <input type="text" class="form-control" id="input-1" placeholder="Enter Your Address" name="maximum_travellers"  >
+                </div>
+                <div class="form-group">
+                 <label for="input-1">languages</label>
+                 <input type="text" class="form-control" id="input-1" placeholder="Enter Your Address" name="languages"   >
+                </div>
+                <div class="form-group">
+                 <label for="input-1">Popular Places</label>
+                 <input type="text" class="form-control" id="input-1" placeholder="Enter Your Address" name="departure_time">
+                </div>
+                <div class="form-group">
+                 <label for="input-1">Price</label>
+                 <input type="text" class="form-control" id="input-1" placeholder="Enter Your Address" name="popular_places" >
+                </div>
 
-         </div>
 
          <div class="form-group">
           <input type="submit" class="btn btn-light px-5 icon-lock" value="Add">
