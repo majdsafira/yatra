@@ -10,7 +10,9 @@
     <div class="container-fluid">
 
   <!--Start Dashboard Content-->
-
+  <div class="form-group">
+    <a href="{{route('tours.create')}}" class="btn btn-light px-5">Create Admin</a>
+  </div>
 	<div class="card mt-3">
     <div class="card-content">
         <div class="row row-group m-0">

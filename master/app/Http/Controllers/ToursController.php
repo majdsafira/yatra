@@ -26,9 +26,6 @@ class ToursController extends Controller
         }
 
 
-
-
-
     }
 
     /**
@@ -39,8 +36,7 @@ class ToursController extends Controller
     public function create()
     {
 
-        //
-        // return view('admin.tour.addTour');
+        return view('admin.tours.create');
     }
 
     /**
@@ -58,10 +54,16 @@ class ToursController extends Controller
             'departure' => 'required',
             'departure_time' => 'required',
             'maximum_travellers' => 'required',
+            'languages' => 'required',
             'popular_places' => 'required',
             'price' => 'required',
+            'image1' => 'required',
+            'image2' => 'required',
+            'image3' => 'required',
+            'image4' => 'required',
 
         ]);
+
         if ($request == true) {
             $tours = new tours;
             $tours->name = $request->input('name');
@@ -69,9 +71,44 @@ class ToursController extends Controller
             $tours->departure = $request->input('departure');
             $tours->departure_time = $request->input('departure_time');
             $tours->maximum_travellers = $request->input(['maximum_travellers']);
+            $tours->languages = $request->input(['languages']);
             $tours->popular_places = $request->input(['popular_places']);
             $tours->price = $request->input(['price']);
-            $donate->save();
+            $image_path = request('image1')->store('tourimg','public');
+
+            $tours->image1 = $image_path;
+            $tours->image2 = $request->input(['image2']);
+            $tours->image3 = $request->input(['image3']);
+            $tours->image4 = $request->input(['image4']);
+            $tours->save();
+            // if ($request->file('image1')) {
+            //     $file = $request->file('image1');
+            //     $filename = date('Y-m-d H:i:s') . $file->getClientOriginalName();
+            //     $file->move(public_path('public/images'), $filename);
+            //     $input['image1'] = "$filename";
+
+            // }
+            // if ($request->file('image2')) {
+            //     $file = $request->file('image2');
+            //     $filename = date('Y-m-d H:i:s') . $file->getClientOriginalName();
+            //     $file->move(public_path('public/images'), $filename);
+            //     $input['image2'] = "$filename";
+
+            // }
+            // if ($request->file('image3')) {
+            //     $file = $request->file('image3');
+            //     $filename = date('Y-m-d H:i:s') . $file->getClientOriginalName();
+            //     $file->move(public_path('public/images'), $filename);
+            //     $input['image3'] = "$filename";
+
+            // }
+            // if ($request->file('image3')) {
+            //     $file = $request->file('image3');
+            //     $filename = date('Y-m-d H:i:s') . $file->getClientOriginalName();
+            //     $file->move(public_path('public/images'), $filename);
+            //     $input['image3'] = "$filename";
+
+            // }
             return redirect('/tours')
                 ->with(('status' . 'Your informasion submited successfully'));}
 

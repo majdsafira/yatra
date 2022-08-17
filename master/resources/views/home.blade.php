@@ -6,15 +6,13 @@
 @php
 $i = 0 ;
 @endphp
-@foreach ($tour as $pac)
-
-@if ($i++ < 3)
+@foreach ($tours as $in)
 
 
-<h5 class="font-weight-medium">{{$pac->name}}</h5>
+
+<h5 class="font-weight-medium">{{$in->name}}</h5>
 
 
- @endif
 
 @endforeach --}}
 <section class="swiper-banner">
@@ -136,7 +134,6 @@ $i = 0 ;
         </div>
     </div>
 </div>
-
 <section class="popular-packages">
     <div class="container">
         <div class="section-title text-center">
@@ -149,119 +146,34 @@ $i = 0 ;
         </div>
         <div class="row package-slider slider-button">
             <div class="col-lg-4">
+                @php
+                $i = 0 ;
+                @endphp
+                @foreach ($tours as $item)
+
+
+            @if (!$item->status)
+
                 <div class="package-item">
                     <div class="package-image">
-                        <img src="images/package1.jpg" alt="Image">
+                        <img src="{{url('storage/'.$item->image1)}}" alt="Image">
                         <div class="package-price">
 
-                            <p><span>$659</span> / PER </p>
+                            <p><span>${{$item->price}}</span> / PER </p>
                         </div>
                     </div>
                     <div class="package-content">
-                        <h3>Surfing at Goa, India</h3>
-                        <p class="package-days"><i class="flaticon-time"></i> 5 days</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                        <h3>{{$item->name}}</h3>
+                        <p class="package-days"></p>
                         <div class="package-info">
                             <a href="/tourdetails" class="btn-blue btn-red">View more details</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="package-item">
-                    <div class="package-image">
-                        <img src="images/package2.jpg" alt="Image">
-                        <div class="package-price">
+             @endif
 
-                            <p><span>$659</span> / PER </p>
-                        </div>
-                    </div>
-                    <div class="package-content">
-                        <h3>Hot Air Ballooning</h3>
-                        <p class="package-days"><i class="flaticon-time"></i> 5 days</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        <div class="package-info">
-                            <a href="/tourdetails" class="btn-blue btn-red">View more details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="package-item">
-                    <div class="package-image">
-                        <img src="images/package3.jpg" alt="Image">
-                        <div class="package-price">
-
-                            <p><span>$659</span> / PER </p>
-                        </div>
-                    </div>
-                    <div class="package-content">
-                        <h3>Lake Tohoe Advanture</h3>
-                        <p class="package-days"><i class="flaticon-time"></i> 5 days</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        <div class="package-info">
-                            <a href="/tourdetails" class="btn-blue btn-red">View more details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="package-item">
-                    <div class="package-image">
-                        <img src="images/package1.jpg" alt="Image">
-                        <div class="package-price">
-
-                            <p><span>$659</span> / PER </p>
-                        </div>
-                    </div>
-                    <div class="package-content">
-                        <h3>Surfing at Goa, India</h3>
-                        <p class="package-days"><i class="flaticon-time"></i> 5 days</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        <div class="package-info">
-                            <a href="/tourdetails" class="btn-blue btn-red">View more details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="package-item">
-                    <div class="package-image">
-                        <img src="images/package2.jpg" alt="Image">
-                        <div class="package-price">
-
-                            <p><span>$659</span> / PER </p>
-                        </div>
-                    </div>
-                    <div class="package-content">
-                        <h3>Hot Air Ballooning</h3>
-                        <p class="package-days"><i class="flaticon-time"></i> 5 days</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        <div class="package-info">
-                            <a href="/tourdetails" class="btn-blue btn-red">View more details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="package-item">
-                    <div class="package-image">
-                        <img src="images/package3.jpg" alt="Image">
-                        <div class="package-price">
-
-                            <p><span>$659</span> / PER </p>
-                        </div>
-                    </div>
-                    <div class="package-content">
-                        <h3>Lake Tohoe Adventure</h3>
-                        <p class="package-days"><i class="flaticon-time"></i> 5 days</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        <div class="package-info">
-                            <a href="/tourdetails" class="btn-blue btn-red">View more details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>

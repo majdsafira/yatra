@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminTemplateController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ToursController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\HomeController;
 
 
 
@@ -21,15 +22,13 @@ use App\Http\Controllers\UserController;
 
 
 //home
- Route::resource('tours', ToursController::class);
+ Route::resource('home', HomeController::class);
 
 
 Route::get('/tourdetails', function () {
     return view('tourdetails');
 });
-Route::get('/home', function () {
-    return view('home');
-});
+
 Route::get('/about', function () {
     return view('about');
 });
@@ -56,10 +55,10 @@ Route::get('/tourgrid', function () {
 
 
 // admin route
-
-Route::resource('users', UserController::class);
-
 Route::resource('admin', AdminController::class);
+Route::resource('users', UserController::class);
+Route::resource('tours', ToursController::class);
+
 Route::get('adminLogin', 'App\Http\Controllers\AdminController@login');
 Route::get('/loginad', 'App\Http\Controllers\AdminController@authLogin')->name('login-auth');
 Route::get('/loginout', 'App\Http\Controllers\AdminController@logout')->name('logout');
