@@ -5,12 +5,12 @@
 <section class="breadcrumb-outer text-center">
     <div class="container">
         <div class="breadcrumb-content">
-            <h2>{{$tour[0]->name}}</h2>
+            <h2>{{$tour->name}}</h2>
             <nav aria-label="breadcrumb">
                 <ul class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Destinations</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">{{$tour[0]->name}}</li>
+                    <li class="breadcrumb-item active" aria-current="page">{{$tour->name}}</li>
                 </ul>
             </nav>
         </div>
@@ -31,8 +31,8 @@
                 <div class="detail-content content-wrapper">
                     <div class="detail-info">
                         <div class="detail-info-content clearfix">
-                            <h2>{{$tour[0]->name}}</h2>
-                            <p class="detail-info-price"><span class="bold">${{$tour[0]->price}}</span></p>
+                            <h2>{{$tour->name}}</h2>
+                            <p class="detail-info-price"><span class="bold">${{$tour->price}}</span></p>
 
                         </div>
                     </div>
@@ -46,22 +46,22 @@
 
                                 <li data-target="#in_th_030" data-slide-to="0" class="active">
 
-                                    <img src="{{url('storage/'.$tour[0]->image1)}}" alt="Image" height="90">
+                                    <img src="{{url('storage/'.$tour->image1)}}" alt="Image" height="90">
 
                                 </li>
 
                                 <li data-target="#in_th_030" data-slide-to="1">
 
-                                    <img src="{{url('storage/'.$tour[0]->image2)}}" alt="Image" height="90">
+                                    <img src="{{url('storage/'.$tour->image2)}}" alt="Image" height="90">
                                 </li>
 
                                 <li data-target="#in_th_030" data-slide-to="2">
 
-                                    <img src="{{url('storage/'.$tour[0]->image3)}}" alt="Image" height="90">
+                                    <img src="{{url('storage/'.$tour->image3)}}" alt="Image" height="90">
                                 </li>
                                 <li data-target="#in_th_030" data-slide-to="3">
 
-                                    <img src="{{url('storage/'.$tour[0]->image4)}}" alt="Image" height="90">
+                                    <img src="{{url('storage/'.$tour->image4)}}" alt="Image" height="90">
                                 </li>
                             </ol>
 
@@ -69,22 +69,22 @@
 
                                 <div class="item active">
 
-                                    <img src="{{url('storage/'.$tour[0]->image1)}}" alt="Image" >
+                                    <img src="{{url('storage/'.$tour->image1)}}" alt="Image" >
                                 </div>
 
                                 <div class="item">
 
-                                    <img src="{{url('storage/'.$tour[0]->image2)}}" alt="Image" >
+                                    <img src="{{url('storage/'.$tour->image2)}}" alt="Image" >
                                 </div>
 
                                 <div class="item">
 
-                                    <img src="{{url('storage/'.$tour[0]->image3)}}" alt="Image" >
+                                    <img src="{{url('storage/'.$tour->image3)}}" alt="Image" >
                                 </div>
 
                                 <div class="item">
 
-                                    <img src="{{url('storage/'.$tour[0]->image4)}}" alt="Image" >
+                                    <img src="{{url('storage/'.$tour->image4)}}" alt="Image" >
                                 </div>
                             </div>
                         </div>
@@ -94,31 +94,31 @@
                             <h3>Description</h3>
                         </div>
                         <div class="description-content">
-                            <p>{{$tour[0]->description}}</p>
+                            <p>{{$tour->description}}</p>
                             <table>
                                 <thead>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td class="title">Departure</td>
-                                        <td> {{$tour[0]->departure}}</td>
+                                        <td> {{$tour->departure}}</td>
                                     </tr>
                                     <tr>
                                         <td class="title">Departure Time</td>
-                                        <td> Please arrive by {{$tour[0]->departure_time}}</td>
+                                        <td> Please arrive by {{$tour->departure_time}}</td>
                                     </tr>
                                     <tr>
                                         <td class="title">Maximum travellers</td>
-                                        <td> {{$tour[0]->maximum_travellers}}</td>
+                                        <td> {{$tour->maximum_travellers}}</td>
                                     </tr>
                                     <tr>
                                         <td class="title">Languages</td>
-                                        <td> {{$tour[0]->languages}}</td>
+                                        <td> {{$tour->languages}}</td>
                                     </tr>
 
                                     <tr>
                                         <td class="title">Popular Places</td>
-                                        <td> {{$tour[0]->popular_places}}</td>
+                                        <td> {{$tour->popular_places}}</td>
 
                                      </tr>
                                 </tbody>
@@ -158,7 +158,7 @@
                                     <input type="hidden" class="form-control" name='user_id' value={{Session::get('user')->id}} id="email1" placeholder="Email">
                                 </div>
                                 <div class="form-group col-lg-6">
-                                    <input type="hidden" class="form-control" name='tour_id' value={{$tour[0]->id}} id="email1" placeholder="Email">
+                                    <input type="hidden" class="form-control" name='tour_id' value={{$tour->id}} id="email1" placeholder="Email">
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="comment-btn">
@@ -175,7 +175,7 @@
                             <h3>Any Questions?</h3>
                             <p>if you have any question please contact us.</p>
                             <p><i class="flaticon-phone-call"></i> 0778091928 </p>
-                           
+
                         </div>
                     </div>
                 </aside>

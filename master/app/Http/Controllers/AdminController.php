@@ -16,7 +16,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        if (Session::has('loginId')) {
+        if (session()->has('loginId')) {
             $admin = Admin::all();
             return view('admin.adminPages.adminInfo')->with('admins', $admin);
         } else {
@@ -31,7 +31,7 @@ class AdminController extends Controller
      */
     public function create()
     {
-        if (Session::has('loginId')) {
+        if (session()->has('loginId')) {
             return view('admin.adminPages.create');
         } else {
             return view('admin.adminpages.login');
@@ -46,7 +46,7 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-        if (Session::has('loginId')) {
+        if (session()->has('loginId')) {
             $this->validate($request, [
                 'name' => 'required',
                 'email' => 'required|email|unique:admins',
@@ -82,7 +82,7 @@ class AdminController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
-    {if (Session::has('loginId')) {
+    {if (session()->has('loginId')) {
         $admin = Admin::find($id);
         return view('admin.adminPages.adminEdit')->with('admins', $admin);
     } else {
@@ -100,7 +100,7 @@ class AdminController extends Controller
      */
     public function update(Request $request, $id)
     {
-        if (Session::has('loginId')) {
+        if (session()->has('loginId')) {
             $admin = Admin::find($id);
             $admin->name = $request->input('name');
             $admin->email = $request->input('email');
@@ -121,7 +121,7 @@ class AdminController extends Controller
      */
     public function destroy($id)
     {
-        if (Session::has('loginId')) {
+        if (session()->has('loginId')) {
             $admins = Admin::find($id);
             $admins->delete();
             return redirect('/admin')->with('success', 'admin Deleted');
@@ -132,7 +132,7 @@ class AdminController extends Controller
 
     public function login()
     {
-        if (Session::has('loginId')) {
+        if (session()->has('loginId')) {
             return view('admin.adminpages.login');
         } else {
             return view('admin.adminpages.login');
@@ -168,8 +168,8 @@ class AdminController extends Controller
 
     public function logout()
     {
-        if (Session::has('loginId')) {
-            Session::pull('loginId');
+        if (session()->has('loginId')) {
+            session()->pull('loginId');
             return redirect('loginad');
         }
     }

@@ -74,7 +74,7 @@
                                 </li>
 
                                 <li>
-                                {{-- @if (Session::has('user')) --}}
+                                 @if (!Session::has('user'))
 
 
                                         <a href="login" class="nav-item nav-link ">login / signup</a>
@@ -83,9 +83,9 @@
 
 
                                 </li>
-
-                                {{-- <a href="{{ route('logout') }}" class="dropdown-item">logout</a>
- @endif --}}
+                                @else
+                                <a href="{{ route('logout') }}" class="dropdown-item">logout</a>
+                                @endif
                         </div>
                         <div id="slicknav-mobile"></div>
                     </nav>

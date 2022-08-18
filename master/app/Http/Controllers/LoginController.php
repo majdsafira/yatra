@@ -13,7 +13,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 
 use App\Http\Controllers\Controller;
-
+use Illuminate\Contracts\Session\Session as SessionSession;
 use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Support\Facades\Hash;
@@ -109,7 +109,7 @@ class LoginController extends Controller
 
         foreach ($users as $user){
             if(request('email') == $user->email && $password == $user->password){
-                Session::put('user', $user);
+                session()->put('user', $user);
                 return redirect('home')->with( 'message','You have Successfully loggedin');
         }
     }
@@ -226,7 +226,7 @@ class LoginController extends Controller
 
     public function logout() {
 
-        Session::flush();
+        session()->flush();
 
         Auth::logout();
 

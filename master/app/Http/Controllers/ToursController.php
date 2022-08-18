@@ -18,7 +18,7 @@ class ToursController extends Controller
     {
 
 
-        if (Session::has('loginId')) {
+        if (session()->has('loginId')) {
             $tours = Tours::all();
             return view('admin.tours.toursInfo')->with('tours', $tours);
         } else {
@@ -100,7 +100,7 @@ class ToursController extends Controller
      */
     public function show(tours $tours)
     {
-        $tour = Tours::find($tours);
+        $tour = Tours::find($tours->id);
         // dd($tour);
         return view('tourdetails', compact('tour'));    }
 
@@ -112,7 +112,7 @@ class ToursController extends Controller
      */
     public function edit($id)
     {
-        if (Session::has('loginId')) {
+        if (session()->has('loginId')) {
             $tours = Tours::find($id);
             return view('admin.tours.toursEdit')->with('tours', $tours);
         } else {
@@ -129,7 +129,7 @@ class ToursController extends Controller
      */
     public function update(Request $request, $id)
     {
-        if (Session::has('loginId')) {
+        if (session()->has('loginId')) {
             $tours = Tours::find($id);
             // dd($donate);
             $tours->name = $request->input('name');
@@ -154,7 +154,7 @@ class ToursController extends Controller
      */
     public function destroy($id)
     {
-        if (Session::has('loginId')) {
+        if (session()->has('loginId')) {
             $tours = Tours::find($id);
             $tours->delete();
             return redirect('/tours')->with('success', "tours Deleted");
