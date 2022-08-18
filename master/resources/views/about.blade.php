@@ -7,12 +7,12 @@
 <section class="breadcrumb-outer text-center">
     <div class="container">
     <div class="breadcrumb-content">
-    <h2>Contact Us Page</h2>
+    <h2>About Us</h2>
     <nav aria-label="breadcrumb">
     <ul class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
 
-    <li class="breadcrumb-item active" aria-current="page">Booking</li>
+    <li class="breadcrumb-item active" aria-current="page">About Us</li>
     </ul>
     </nav>
     </div>
@@ -87,8 +87,8 @@
                         <img src="images/testemonial1.jpg" alt="Image">
                     </div>
                     <div class="team-content">
-                        <h3>Peter Parker</h3>
-                        <p>Tour Advisor</p>
+                        <h3>Majd Safira</h3>
+                        <p>Web Developer</p>
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@
     </div>
 </section>
 
-<section class="testimonials">
+{{-- <section class="testimonials">
     <div class="section-title text-center">
         <h2>Best Rated Travel Agency</h2>
         <div class="section-icon section-icon-white">
@@ -167,7 +167,7 @@
                     <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat
                         in in velit quis arcu ornare laoreet urabitur adipiscing luctus massa nteger ut purus ac augue
                         commodo commodo unc nec mi eu justo tempor consectetuer tiam.</p>
-                     
+
                     <h5><a href="#">Susan Doe, Houston</a></h5>
                 </div>
             </div>
@@ -185,7 +185,7 @@
 
         </div>
     </div>
-</section>
+</section> --}}
 
 <section class="trusted-partners">
     <div class="container">

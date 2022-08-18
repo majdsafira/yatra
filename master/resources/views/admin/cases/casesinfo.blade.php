@@ -56,10 +56,9 @@
                    <tr>
                      <th>NUM</th>
                      <th>Name</th>
-                     <th>Phone</th>
-                     <th>address</th>
-                     <th>National ID</th>
-                     <th>description</th>
+                     <th>Email</th>
+                     <th>username   </th>
+
                      <th>Status</th>
                      <th >Actions</th>
 
@@ -75,10 +74,8 @@
 
                         <th>{{$i++}}</th>
                         <td>{{$item->name}}</td>
-                        <td>{{$item->phone}}</td>
-                        <td>{{$item->address}}</td>
-                        <td>{{$item->social_security}}</td>
-                        <td>{{$item->description}}</td>
+                        <td>{{$item->email}}</td>
+                        <td>{{$item->username}}</td>
 
                         <td class = "row">
                           <div class="card-action">
@@ -88,7 +85,7 @@
              <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
                <i class="bx bx-show me-1">In progress</i>
              </a>
-          <form action="{{route('toggle',$item->id)}}" method="POST">
+          <form  method="POST">
               @csrf
              <div class="dropdown-menu dropdown-menu-right">
               <input type="submit" class="dropdown-item" value='Done' name='status'>

@@ -74,41 +74,17 @@ class ToursController extends Controller
             $tours->languages = $request->input(['languages']);
             $tours->popular_places = $request->input(['popular_places']);
             $tours->price = $request->input(['price']);
-            $image_path = request('image1')->store('tourimg','public');
+            $image_path1 = request('image1')->store('tourimg','public');
+            $tours->image1 = $image_path1;
+            $image_path2 = request('image2')->store('tourimg','public');
+            $tours->image2 = $image_path2;
+            $image_path3 = request('image3')->store('tourimg','public');
+            $tours->image3 = $image_path3;
+            $image_path4 = request('image4')->store('tourimg','public');
+            $tours->image4 = $image_path4;
 
-            $tours->image1 = $image_path;
-            $tours->image2 = $request->input(['image2']);
-            $tours->image3 = $request->input(['image3']);
-            $tours->image4 = $request->input(['image4']);
             $tours->save();
-            // if ($request->file('image1')) {
-            //     $file = $request->file('image1');
-            //     $filename = date('Y-m-d H:i:s') . $file->getClientOriginalName();
-            //     $file->move(public_path('public/images'), $filename);
-            //     $input['image1'] = "$filename";
 
-            // }
-            // if ($request->file('image2')) {
-            //     $file = $request->file('image2');
-            //     $filename = date('Y-m-d H:i:s') . $file->getClientOriginalName();
-            //     $file->move(public_path('public/images'), $filename);
-            //     $input['image2'] = "$filename";
-
-            // }
-            // if ($request->file('image3')) {
-            //     $file = $request->file('image3');
-            //     $filename = date('Y-m-d H:i:s') . $file->getClientOriginalName();
-            //     $file->move(public_path('public/images'), $filename);
-            //     $input['image3'] = "$filename";
-
-            // }
-            // if ($request->file('image3')) {
-            //     $file = $request->file('image3');
-            //     $filename = date('Y-m-d H:i:s') . $file->getClientOriginalName();
-            //     $file->move(public_path('public/images'), $filename);
-            //     $input['image3'] = "$filename";
-
-            // }
             return redirect('/tours')
                 ->with(('status' . 'Your informasion submited successfully'));}
 
@@ -124,8 +100,9 @@ class ToursController extends Controller
      */
     public function show(tours $tours)
     {
-        //
-    }
+        $tour = Tours::find($tours);
+        // dd($tour);
+        return view('tourdetails', compact('tour'));    }
 
     /**
      * Show the form for editing the specified resource.
@@ -185,5 +162,12 @@ class ToursController extends Controller
          else {
             return view('admin.adminpages.login');
         }
+    }
+
+    public function viewtour() {
+
+        $tours = Tours::all();
+        return view('tourgrid')->with('tours', $tours);
+
     }
 }

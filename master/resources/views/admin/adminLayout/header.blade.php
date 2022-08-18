@@ -60,14 +60,10 @@
         </a>
       </li>
 
+      
       <li>
-        <a href="/volenteersinfo">
-          <i class="zmdi zmdi-slideshare"></i> <span>Bookings</span>
-        </a>
-      </li>
-      <li>
-        <a href="/casesinfo">
-          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Cases</span>
+        <a href="/cases">
+          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Bookings</span>
         </a>
       </li>
 

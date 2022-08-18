@@ -5,12 +5,12 @@
     <section class="breadcrumb-outer text-center">
         <div class="container">
         <div class="breadcrumb-content">
-        <h2>Contact Us Page</h2>
+        <h2>Contact Us</h2>
         <nav aria-label="breadcrumb">
         <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
 
-        <li class="breadcrumb-item active" aria-current="page">Booking</li>
+        <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
         </ul>
         </nav>
         </div>
@@ -61,11 +61,10 @@
                         <img src="images/Yatra-01.png" alt="Image">
                     </div>
                     <h4>Travel With Us</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     <div class="contact-location">
                         <ul>
                             <li><i class="flaticon-maps-and-flags" aria-hidden="true"></i> Location</li>
-                            <li><i class="flaticon-phone-call"></i> (012)-345-6789</li>
+                            <li><i class="flaticon-phone-call"></i> 0778091928</li>
                             <li><i class="flaticon-mail"></i> <a
                                     href="https://htmldesigntemplates.com/cdn-cgi/l/email-protection"
                                     class="__cf_email__"
@@ -73,7 +72,7 @@
                             </li>
                         </ul>
                     </div>
-                   
+
                 </div>
             </div>
         </div>

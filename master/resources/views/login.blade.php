@@ -23,48 +23,42 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="login-form">
-                    <form>
+                    @if (Session::has('message'))
+                        <div class="alert alert-danger" role="alert">
+                            <strong>{{Session('message')}}</strong>
+                        </div>
+                    @endif
+                    @if (Session::has('success'))
+                        <div class="alert alert-success" role="alert">
+                            <strong>{{Session('success')}}</strong>
+                        </div>
+                    @endif
+                    <form method="POST" action="/postLogin" >
+                        @csrf
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-title">
                                     <h2>Login</h2>
-                                    <p>Register if you don't have an account.</p>
+                                    <a href="signup">Register if you don't have an account.</a>
                                 </div>
                             </div>
                             <div class="form-group col-lg-12">
                                 <label>Username</label>
-                                <input type="email" class="form-control" id="Name1"
-                                    placeholder="Enter username or email id">
+                                <input type="email" class="form-control" name="email" id="Name1"
+                                    placeholder="Enter email" required>
                             </div>
                             <div class="form-group col-lg-12">
                                 <label>Password</label>
-                                <input type="password" class="form-control" id="email1"
-                                    placeholder="Enter correct password">
+                                <input type="password" name="password" class="form-control" id="email1"
+                                    placeholder="Enter correct password" required>
                             </div>
-                            <div class="col-lg-12">
-                                <div class="checkbox-outer">
-                                    <input type="checkbox" name="vehicle2" value="Car"> Remember Me?
-                                </div>
-                            </div>
+
                             <div class="col-lg-12">
                                 <div class="comment-btn">
-                                    <a href="#" class="btn-blue btn-red">Login</a>
+                                    <button type="submit" class="btn-blue btn-red" >Login</button>
                                 </div>
                             </div>
-                            <div class="col-lg-12">
-                                <div class="login-accounts">
-                                    <a href="forgot-password.html" class="forgotpw">Forgot Password?</a>
-                                    <h3>Login using</h3>
-                                    <div class="login-accounts-btn">
-                                        <a class="btn-blue" href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
-                                            Facebook</a>
-                                        <a class="btn-blue btn-google" href="#"><i class="fa fa-google"
-                                                aria-hidden="true"></i> Google</a>
-                                        <a class="btn-blue btn-twit" href="#"><i class="fa fa-twitter"
-                                                aria-hidden="true"></i> Twitter</a>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </form>
                 </div>

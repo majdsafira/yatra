@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Yatra - Travel Agency HTML Template</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo1.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo1.png">
 
     <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
@@ -26,7 +26,7 @@
     <script async src='/../../../cdn-cgi/challenge-platform/h/g/scripts/invisibleec93.js?ts=1656158400'></script>
 
 
-    <link rel="/shortcut icon" type="image/x-icon" href="images/logo1.png">
+    <link rel="/shortcut icon" type="image/x-icon" href="/images/logo1.png">
 
     <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
@@ -53,7 +53,7 @@
 
                     <nav class="navbar navbar-default navbar-sticky-function navbar-arrow">
                         <div class="logo pull-left">
-                            <a href="/"><img alt="Image" src="images/Yatra-01.png"></a>
+                            <a href="/"><img alt="Image" src="/images/Yatra-01.png"></a>
                         </div>
                         <div id="navbar" class="navbar-nav-wrapper">
                             <ul class="nav navbar-nav" id="responsive-menu">
@@ -72,11 +72,20 @@
                                     <a href="/contact">Contact</a>
 
                                 </li>
+
                                 <li>
-                                    <a href="/profile"> Profile</a>
+                                {{-- @if (Session::has('user')) --}}
+
+
+                                        <a href="login" class="nav-item nav-link ">login / signup</a>
+                                        {{-- <a href="signup" class="nav-item nav-link">sign up</a> --}}
+
+
 
                                 </li>
 
+                                {{-- <a href="{{ route('logout') }}" class="dropdown-item">logout</a>
+ @endif --}}
                         </div>
                         <div id="slicknav-mobile"></div>
                     </nav>

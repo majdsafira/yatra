@@ -10,14 +10,13 @@
                     <div class="col-lg-3">
                         <div class="footer-about footer-margin">
                             <div class="about-logo">
-                                <img src="images/Yatra-white.png" alt="Image">
+                                <img src="/images/Yatra-white.png" alt="Image">
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
+
                             <div class="about-location">
                                 <ul>
                                     <li><i class="flaticon-maps-and-flags" aria-hidden="true"></i> Location</li>
-                                    <li><i class="flaticon-phone-call"></i> (012)-345-6789</li>
+                                    <li><i class="flaticon-phone-call"></i> 0778091928</li>
                                     <li><i class="flaticon-mail"></i> <a
                                             href="https://htmldesigntemplates.com/cdn-cgi/l/email-protection"
                                             class="__cf_email__"
@@ -37,7 +36,7 @@
                                 </li>
                                 <li><a href="#">Sporades </a></li>
                                 <li><a href="#">View all Destinations         </a></li>
-                              
+
                             </ul>
                         </div>
                     </div>
@@ -48,7 +47,7 @@
                                 <li>
                                     <div class="recent-post-item">
                                         <div class="recent-post-image">
-                                            <img src="images/bucket1.jpg" alt="Image">
+                                            <img src="/images/bucket1.jpg" alt="Image">
                                         </div>
                                         <div class="recent-post-content">
                                             <h4><a href="#">A trip to heaven</a></h4>
@@ -59,7 +58,7 @@
                                 <li>
                                     <div class="recent-post-item">
                                         <div class="recent-post-image">
-                                            <img src="images/bucket2.jpg" alt="Image">
+                                            <img src="/images/bucket2.jpg" alt="Image">
                                         </div>
                                         <div class="recent-post-content">
                                             <h4><a href="#">Diving in Atlantic</a></h4>
@@ -70,7 +69,7 @@
                                 <li>
                                     <div class="recent-post-item">
                                         <div class="recent-post-image">
-                                            <img src="images/bucket3.jpg" alt="Image">
+                                            <img src="/images/bucket3.jpg" alt="Image">
                                         </div>
                                         <div class="recent-post-content">
                                             <h4><a href="#">Travellers History</a></h4>
@@ -86,15 +85,15 @@
                             <div class="footer-instagram">
                                 <h3>Instagram</h3>
                                 <ul>
-                                    <li><img src="images/insta1.jpg" alt="Image"></li>
-                                    <li><img src="images/insta2.jpg" alt="Image"></li>
-                                    <li><img src="images/insta3.jpg" alt="Image"></li>
-                                    <li><img src="images/insta4.jpg" alt="Image"></li>
-                                    <li><img src="images/insta5.jpg" alt="Image"></li>
-                                    <li><img src="images/insta6.jpg" alt="Image"></li>
-                                    <li><img src="images/insta7.jpg" alt="Image"></li>
-                                    <li><img src="images/insta8.jpg" alt="Image"></li>
-                                    <li><img src="images/insta9.jpg" alt="Image"></li>
+                                    <li><img src="/images/insta1.jpg" alt="Image"></li>
+                                    <li><img src="/images/insta2.jpg" alt="Image"></li>
+                                    <li><img src="/images/insta3.jpg" alt="Image"></li>
+                                    <li><img src="/images/insta4.jpg" alt="Image"></li>
+                                    <li><img src="/images/insta5.jpg" alt="Image"></li>
+                                    <li><img src="/images/insta6.jpg" alt="Image"></li>
+                                    <li><img src="/images/insta7.jpg" alt="Image"></li>
+                                    <li><img src="/images/insta8.jpg" alt="Image"></li>
+                                    <li><img src="/images/insta9.jpg" alt="Image"></li>
                                 </ul>
                             </div>
                         </div>
@@ -108,25 +107,23 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="copyright-content">
-                        <p>2018 <i class="fa fa-copyright" aria-hidden="true"></i> Yatra by <a
-                                href="https://www.cyclonethemes.com/" target="_blank">Cyclone Themes</a></p>
-                    </div>
+                        <p>2018 Yatra</p>
                 </div>
                 <div class="col-lg-6">
                     <div class="payment-content">
                         <ul>
                             <li>We Accept</li>
                             <li>
-                                <img src="images/payment1.png" alt="Image">
+                                <img src="/images/payment1.png" alt="Image">
                             </li>
                             <li>
-                                <img src="images/payment2.png" alt="Image">
+                                <img src="/images/payment2.png" alt="Image">
                             </li>
                             <li>
-                                <img src="images/payment3.png" alt="Image">
+                                <img src="/images/payment3.png" alt="Image">
                             </li>
                             <li>
-                                <img src="images/payment4.png" alt="Image">
+                                <img src="/images/payment4.png" alt="Image">
                             </li>
                         </ul>
                     </div>
